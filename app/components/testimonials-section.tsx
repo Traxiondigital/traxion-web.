@@ -50,52 +50,62 @@ export default function TestimonialsSection() {
           </p>
         </motion.div>
 
-        {/* Video Testimonial Destacado */}
+        {/* Video Testimonial Vertical (Reel Format) */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={inView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.8 }}
-          className="mb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-dark-700/50 p-8 sm:p-12 rounded-[40px] border border-white/5"
+          className="mb-20 flex flex-col lg:flex-row gap-12 items-center justify-center"
         >
-          <div className="relative aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
-            <video 
-              className="w-full h-full object-cover"
-              poster="/images/traxion-marketing-agency-cover.png"
-              controls
-            >
-              <source src="/testimonio-katherine-gonzalez.mp4" type="video/mp4" />
-              Tu navegador no soporta el elemento de video.
-            </video>
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none group-hover:opacity-0 transition-opacity">
-              <PlayCircle className="text-blue-500 w-20 h-20 drop-shadow-lg" />
+          {/* Video Vertical */}
+          <div className="w-full lg:w-auto flex justify-center">
+            <div className="relative w-full max-w-sm lg:max-w-none lg:w-80 aspect-[9/16] rounded-[32px] overflow-hidden border-8 border-dark-700 shadow-2xl bg-dark-700 group">
+              <video 
+                className="w-full h-full object-cover"
+                poster="/images/traxion-marketing-agency-cover.png"
+                controls
+                controlsList="nodownload"
+              >
+                <source src="/testimonio-katherine-gonzalez.mp4" type="video/mp4" />
+                Tu navegador no soporta el elemento de video.
+              </video>
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none group-hover:opacity-0 transition-opacity bg-dark-900/20">
+                <PlayCircle className="text-blue-400 w-16 h-16 drop-shadow-lg" />
+              </div>
             </div>
           </div>
-          
-          <div>
+
+          {/* Contenido de Reseña */}
+          <div className="w-full lg:w-auto lg:max-w-md">
             <div className="flex gap-1 mb-6">
               {[...Array(5)].map((_, j) => (
                 <Star key={j} size={20} className="fill-blue-500 text-blue-500" />
               ))}
             </div>
+            
             <Quote className="text-blue-500/20 mb-4" size={48} />
+            
             <h3 className="text-2xl sm:text-3xl font-bold mb-6 leading-tight">
               "Logramos aumentar nuestras atenciones e ingresos de forma directa."
             </h3>
-            <p className="text-gray-400 text-lg mb-8 italic">
-              "Antes de Traxion Digital, teníamos baja visibilidad y pocos pacientes. Gracias a su trato personalizado y soluciones rápidas, hoy tenemos un flujo constante de usuarios en nuestro centro de salud mental."
+            
+            <p className="text-gray-400 text-lg mb-8 italic leading-relaxed">
+              "Antes de Traxion Digital, teníamos baja visibilidad y pocos pacientes. Gracias a su trato personalizado y soluciones rápidas, hoy tenemos un flujo constante de usuarios en nuestro centro de salud mental. ¡Recomendado 100%!"
             </p>
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold">
+            
+            <div className="flex items-center gap-4 p-6 rounded-2xl bg-dark-700/50 border border-white/5">
+              <div className="w-14 h-14 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold text-lg flex-shrink-0">
                 KG
               </div>
               <div>
-                <h4 className="font-bold text-white">Katherine González</h4>
+                <h4 className="font-bold text-white text-lg">Katherine González</h4>
                 <p className="text-sm text-gray-500">Directora del Centro de Psicología y Arte</p>
               </div>
             </div>
           </div>
         </motion.div>
 
+        {/* Testimonios de Texto */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((t, i) => (
             <motion.div
