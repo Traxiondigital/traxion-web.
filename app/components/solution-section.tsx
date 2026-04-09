@@ -78,7 +78,7 @@ export default function SolutionSection() {
           >
             <Image
               src="https://cdn.abacus.ai/images/72ad64c5-1837-435a-97e8-570ec6b42538.png"
-              alt="Dashboard de marketing digital mostrando resultados positivos y crecimiento de leads"
+              alt="Dashboard de marketing digital de Traxion Agency mostrando resultados positivos y crecimiento de leads"
               fill
               className="object-cover"
             />

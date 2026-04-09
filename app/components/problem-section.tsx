@@ -80,7 +80,7 @@ export default function ProblemSection() {
         >
           <Image
             src="https://cdn.abacus.ai/images/a83dff90-151d-4111-9f28-d6ac930296b3.jpg"
-            alt="Empresario preocupado revisando resultados negativos de ventas"
+            alt="Empresario preocupado revisando resultados negativos de ventas antes de contratar a Traxion Digital"
             fill
             className="object-cover opacity-70"
           />

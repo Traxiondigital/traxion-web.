@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Star, Quote, TrendingUp } from 'lucide-react';
+import { Star, Quote, TrendingUp, PlayCircle } from 'lucide-react';
 
 const testimonials = [
   {
@@ -48,6 +48,52 @@ export default function TestimonialsSection() {
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
             Negocios chilenos que dejaron de depender del boca a boca y hoy tienen un sistema de captación que trabaja por ellos.
           </p>
+        </motion.div>
+
+        {/* Video Testimonial Destacado */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={inView ? { opacity: 1, scale: 1 } : {}}
+          transition={{ duration: 0.8 }}
+          className="mb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-dark-700/50 p-8 sm:p-12 rounded-[40px] border border-white/5"
+        >
+          <div className="relative aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
+            <video 
+              className="w-full h-full object-cover"
+              poster="/images/traxion-marketing-agency-cover.png"
+              controls
+            >
+              <source src="/testimonio-katherine-gonzalez.mp4" type="video/mp4" />
+              Tu navegador no soporta el elemento de video.
+            </video>
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none group-hover:opacity-0 transition-opacity">
+              <PlayCircle className="text-blue-500 w-20 h-20 drop-shadow-lg" />
+            </div>
+          </div>
+          
+          <div>
+            <div className="flex gap-1 mb-6">
+              {[...Array(5)].map((_, j) => (
+                <Star key={j} size={20} className="fill-blue-500 text-blue-500" />
+              ))}
+            </div>
+            <Quote className="text-blue-500/20 mb-4" size={48} />
+            <h3 className="text-2xl sm:text-3xl font-bold mb-6 leading-tight">
+              "Logramos aumentar nuestras atenciones e ingresos de forma directa."
+            </h3>
+            <p className="text-gray-400 text-lg mb-8 italic">
+              "Antes de Traxion Digital, teníamos baja visibilidad y pocos pacientes. Gracias a su trato personalizado y soluciones rápidas, hoy tenemos un flujo constante de usuarios en nuestro centro de salud mental."
+            </p>
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold">
+                KG
+              </div>
+              <div>
+                <h4 className="font-bold text-white">Katherine González</h4>
+                <p className="text-sm text-gray-500">Directora del Centro de Psicología y Arte</p>
+              </div>
+            </div>
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
