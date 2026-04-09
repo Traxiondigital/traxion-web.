@@ -76,7 +76,7 @@ export default function HeroSection() {
             </div>
           </motion.div>
 
-          {/* Foto del Fundador */}
+          {/* Foto del Fundador con Efecto Blur */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -84,14 +84,16 @@ export default function HeroSection() {
             className="lg:col-span-5 relative hidden lg:block"
           >
             <div className="relative w-full aspect-[4/5] rounded-[40px] overflow-hidden border border-white/10 shadow-2xl group">
+              {/* Imagen con efecto blur */}
+              <div className="absolute inset-0 z-10 backdrop-blur-[8px]" />
               <Image
                 src="/images/fundador-traxion-digital.png"
                 alt="Fundador de Traxion Digital - Especialista en captación de clientes"
                 fill
-                className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                className="object-cover object-top transition-transform duration-700 group-hover:scale-105 blur-sm"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent opacity-60" />
-              <div className="absolute bottom-8 left-8 right-8 p-6 bg-dark-800/80 backdrop-blur-md rounded-2xl border border-white/10">
+              <div className="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent opacity-60 z-20" />
+              <div className="absolute bottom-8 left-8 right-8 p-6 bg-dark-800/80 backdrop-blur-md rounded-2xl border border-white/10 z-30">
                 <p className="text-blue-400 font-bold text-sm uppercase tracking-widest mb-1">Estrategia Real</p>
                 <p className="text-white text-lg font-medium">"Captamos clientes cualificados para tu negocio"</p>
               </div>

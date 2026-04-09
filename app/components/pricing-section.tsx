@@ -22,8 +22,8 @@ const planFeatures = [
   },
   {
     icon: Palette,
-    title: 'Creatividad — tu ventaja competitiva',
-    items: ['2 anuncios mensuales (copy + idea visual)', 'Aquí está tu diferencial real'],
+    title: 'Creatividad',
+    items: ['2 anuncios mensuales (copy + idea visual)', 'Estrategia visual diferenciada'],
     highlight: true,
   },
   {
