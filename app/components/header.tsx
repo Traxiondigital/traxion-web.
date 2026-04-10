@@ -35,9 +35,9 @@ export default function Header() {
           <Image
             src="/images/logo-traxion.png"
             alt="TRAXION Marketing Agency logo"
-            width={140}
-            height={40}
-            className="h-8 sm:h-10 w-auto"
+            width={180}
+            height={50}
+            className="h-12 sm:h-14 w-auto"
             priority
           />
         </a>
