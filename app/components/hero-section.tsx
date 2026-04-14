@@ -31,12 +31,11 @@ export default function HeroSection() {
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight mb-8">
-            Llena tu hospedaje con reservas todas las semanas sin depender solo de{' '}
-            <span className="text-gradient">temporada alta</span>
+            Llenamos tu hospedaje con <span className="text-gradient">reservas reales cada semana</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-3xl leading-relaxed mx-auto">
-            Generamos solicitudes de reserva de personas reales interesadas en alojarse en tu propiedad usando campañas en Instagram y Facebook.
+            Nuestro sistema atrae huéspedes verificados directamente a tu propiedad, asegurando ocupación constante.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

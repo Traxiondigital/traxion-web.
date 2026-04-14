@@ -8,29 +8,26 @@ const planFeatures = [
   {
     icon: Megaphone,
     title: 'Campañas en Meta Ads',
-    items: ['Configuración completa', 'Optimización semanal'],
+items: [\'Estrategias avanzadas de segmentación\', \'Optimización continua para ROI máximo\'],
   },
   {
     icon: BarChart2,
     title: 'Gestión publicitaria',
-    items: ['Segmentación estratégica', 'Testing básico'],
+items: [\'Gestión proactiva de campañas\', \'Análisis de rendimiento y ajustes en tiempo real\'],
   },
   {
     icon: Users,
     title: 'Generación de leads',
-    items: ['Formularios en Meta', 'Integración a CRM (Privyr)'],
-  },
+  items: [\'Captura de leads cualificados con formularios optimizados\', \'Integración fluida con tu CRM para seguimiento inmediato\'], },
   {
     icon: Palette,
     title: 'Creatividad',
-    items: ['2 anuncios mensuales (copy + idea visual)', 'Estrategia visual diferenciada'],
-    highlight: true,
+    items: [\'Creativos de alto impacto diseñados para conversión\', \'Desarrollo de mensajes que resuenan con tu audiencia ideal\'], highlight: true,
   },
   {
     icon: FileBarChart,
     title: 'Reporte semanal',
-    items: ['Leads generados', 'Costo por resultado', 'Recomendaciones'],
-  },
+ items: [\'Reportes detallados de rendimiento y ROI\', \'Análisis de métricas clave y recomendaciones estratégicas\'],},
 ];
 
 export default function PricingSection() {
@@ -47,10 +44,10 @@ export default function PricingSection() {
         >
           <span className="text-blue-400 text-sm font-semibold uppercase tracking-wider">Precios</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold mt-3 mb-4">
-            Inversión que se <span className="text-gradient">paga sola</span>
+            Tu <span className="text-gradient">inversión estratégica</span> en ocupación
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-            Sin contratos largos. Mes a mes. Cancela cuando quieras.
+            Diseñado para propietarios que buscan escalar y maximizar la rentabilidad de su hospedaje.
           </p>
         </motion.div>
 
@@ -121,12 +118,12 @@ export default function PricingSection() {
               href="#formulario"
               className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold text-lg rounded-xl transition-all hover:shadow-lg hover:shadow-blue-500/30"
             >
-              Quiero empezar ahora
+              Solicitar Auditoría Gratuita
               <ArrowRight size={20} />
             </a>
 
             <p className="text-xs text-gray-500 text-center mt-4">
-              Sin permanencia. Cancela cuando quieras. Garantía 30 días.
+              Sin permanencia. Cancela cuando quieras.
             </p>
           </div>
         </motion.div>

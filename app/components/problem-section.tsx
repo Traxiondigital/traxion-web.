@@ -9,22 +9,22 @@ const problems = [
   {
     icon: Calendar,
     title: 'Dependes de fines de semana y temporada alta',
-    desc: 'Tu ocupación sube y baja drásticamente. Entre semana o en temporada baja, tu hospedaje está vacía y pierdes dinero potencial.',
+    desc: 'Tu flujo de ingresos es impredecible. Los periodos de baja ocupación te impiden escalar y maximizar la rentabilidad de tu hospedaje.',
   },
   {
     icon: TrendingDown,
     title: 'Tienes fechas vacías que podrías estar facturando',
-    desc: 'Hay semanas completas sin reservas. No tienes un sistema constante que te traiga clientes durante todo el año.',
+    desc: 'Cada día sin una reserva es una oportunidad de ingreso perdida. Necesitas un flujo constante de huéspedes para optimizar tu capacidad.',
   },
   {
     icon: MessageCircle,
     title: 'Te escriben, pero no concretan reservas',
-    desc: 'Recibes consultas, pero muchas se pierden o los interesados se van con la competencia. No tienes un follow-up efectivo.',
+    desc: 'Las consultas que no se convierten en reservas son tiempo y dinero desperdiciado. Tu proceso actual no capitaliza el interés de los potenciales huéspedes.',
   },
   {
     icon: AlertTriangle,
     title: 'No tienes un sistema constante de clientes',
-    desc: 'Dependes del boca a boca o de plataformas de terceros que cobran comisión. Necesitas tu propio canal de adquisición.',
+    desc: 'La dependencia de terceros o el boca a boca limita tu crecimiento. Es hora de construir un canal de adquisición propio y predecible que te dé control total.',
   },
 ];
 

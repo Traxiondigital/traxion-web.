@@ -8,23 +8,23 @@ import Image from 'next/image';
 const solutions = [
   {
     icon: Zap,
-    title: 'Campañas en Instagram y Facebook',
-    desc: 'Mostramos tu hospedaje a personas que ya están buscando alojamiento. Ellos nos encuentran, no nosotros a ellos.',
+    title: 'Estrategias de Captación Premium',
+    desc: 'Atraemos exclusivamente a viajeros con alta intención de reserva, filtrando y cualificando para tu hospedaje.'
   },
   {
     icon: Users,
-    title: 'Formulario de reserva integrado',
-    desc: 'Los interesados dejan sus datos en un formulario simple. Recibes los datos directamente en tu WhatsApp o email.',
+    title: 'Proceso de Cualificación y Reserva',
+    desc: 'Simplificamos la conversión de interesados en huéspedes, con un sistema que captura datos clave y facilita la reserva directa.'
   },
   {
     icon: TrendingUp,
-    title: 'Clientes potenciales todos los días',
-    desc: 'No dependerás de temporada alta. Tendrás un flujo constante de personas interesadas en tu propiedad.',
+    title: 'Flujo Constante de Huéspedes Verificados',
+    desc: 'Garantizamos un flujo ininterrumpido de solicitudes de reserva de calidad, eliminando la estacionalidad y maximizando tu ocupación.'
   },
   {
     icon: Calendar,
-    title: 'Ocupa tus fechas vacías',
-    desc: 'Llena esos días entre semana y temporada baja que antes dejabas sin ingresos. Cada reserva es dinero en tu bolsillo.',
+    title: 'Optimización de Ocupación Anual',
+    desc: 'Transformamos tus periodos de baja demanda en oportunidades de ingreso, asegurando que cada noche en tu hospedaje sea rentable.'
   },
 ];
 
@@ -42,11 +42,10 @@ export default function SolutionSection() {
           >
             <span className="text-blue-400 text-sm font-semibold uppercase tracking-wider">La solución</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold mt-3 mb-6">
-              Creamos un sistema que te trae{' '}
-              <span className="text-gradient">potenciales clientes todos los días</span>
+              Tu sistema de <span className="text-gradient">adquisición de huéspedes</span>, automatizado
             </h2>
             <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-              A través de campañas en redes sociales, mostramos tu hospedaje a personas que ya están buscando dónde alojar, y las llevamos a un formulario donde dejan sus datos para reservar.
+              Implementamos un sistema predecible que atrae huéspedes verificados, gestiona sus consultas y convierte el interés en reservas confirmadas para tu hospedaje.
             </p>
 
             <div className="space-y-4">
