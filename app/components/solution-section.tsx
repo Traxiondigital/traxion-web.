@@ -2,29 +2,29 @@
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Target, BarChart3, MessageSquare, Palette } from 'lucide-react';
+import { Zap, Users, TrendingUp, Calendar } from 'lucide-react';
 import Image from 'next/image';
 
 const solutions = [
   {
-    icon: Target,
-    title: 'Captación automatizada de principio a fin',
-    desc: 'Anuncio → formulario → CRM → WhatsApp. Todo conectado para que ningún lead se pierda.',
+    icon: Zap,
+    title: 'Campañas en Instagram y Facebook',
+    desc: 'Mostramos tu cabaña a personas que ya están buscando alojamiento. Ellos nos encuentran, no nosotros a ellos.',
   },
   {
-    icon: Palette,
-    title: 'Creatividad que convierte, no solo que se ve bonita',
-    desc: 'Diseñamos anuncios con copy estratégico e ideas visuales que generan clics reales, no solo impresiones.',
+    icon: Users,
+    title: 'Formulario de reserva integrado',
+    desc: 'Los interesados dejan sus datos en un formulario simple. Recibes los datos directamente en tu WhatsApp o email.',
   },
   {
-    icon: MessageSquare,
-    title: 'Seguimiento instantáneo por WhatsApp',
-    desc: 'Cada lead que llega es contactado en segundos de forma automatizada. La velocidad de respuesta es clave para cerrar ventas.',
+    icon: TrendingUp,
+    title: 'Clientes potenciales todos los días',
+    desc: 'No dependerás de temporada alta. Tendrás un flujo constante de personas interesadas en tu propiedad.',
   },
   {
-    icon: BarChart3,
-    title: 'Reporte semanal con datos reales',
-    desc: 'Sabrás exactamente cuántos leads llegaron, cuánto costó cada uno y qué optimizamos para la siguiente semana.',
+    icon: Calendar,
+    title: 'Ocupa tus fechas vacías',
+    desc: 'Llena esos días entre semana y temporada baja que antes dejabas sin ingresos. Cada reserva es dinero en tu bolsillo.',
   },
 ];
 
@@ -42,11 +42,11 @@ export default function SolutionSection() {
           >
             <span className="text-blue-400 text-sm font-semibold uppercase tracking-wider">La solución</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold mt-3 mb-6">
-              Un sistema que{' '}
-              <span className="text-gradient">llena tu agenda</span> de forma predecible
+              Creamos un sistema que te trae{' '}
+              <span className="text-gradient">potenciales clientes todos los días</span>
             </h2>
             <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-              En TRAXION combinamos <strong className="text-white">estrategia, creatividad y tecnología</strong> para construir un flujo constante de clientes cualificados que llegan directo a ti, sin que tengas que perseguirlos.
+              A través de campañas en redes sociales, mostramos tu cabaña a personas que ya están buscando dónde alojar, y las llevamos a un formulario donde dejan sus datos para reservar.
             </p>
 
             <div className="space-y-4">
@@ -78,7 +78,7 @@ export default function SolutionSection() {
           >
             <Image
               src="https://cdn.abacus.ai/images/72ad64c5-1837-435a-97e8-570ec6b42538.png"
-              alt="Dashboard de marketing digital de Traxion Agency mostrando resultados positivos y crecimiento de leads"
+              alt="Sistema de reservas de Traxion Digital mostrando crecimiento de ocupación en cabañas"
               fill
               className="object-cover"
             />
@@ -86,7 +86,7 @@ export default function SolutionSection() {
             <div className="absolute bottom-6 left-6 right-6">
               <div className="bg-dark-700/80 backdrop-blur-sm rounded-xl p-4 border border-white/10">
                 <p className="text-sm text-gray-400 mb-1">Resultado promedio de nuestros clientes</p>
-                <p className="text-2xl font-extrabold text-white">+47 leads <span className="text-blue-400">en el primer mes</span></p>
+                <p className="text-2xl font-extrabold text-white">+35 reservas <span className="text-blue-400">en el primer mes</span></p>
               </div>
             </div>
           </motion.div>
