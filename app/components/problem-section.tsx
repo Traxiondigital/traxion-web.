@@ -2,29 +2,29 @@
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { AlertTriangle, TrendingDown, Clock, Users } from 'lucide-react';
+import { AlertTriangle, Calendar, MessageCircle, TrendingDown } from 'lucide-react';
 import Image from 'next/image';
 
 const problems = [
   {
+    icon: Calendar,
+    title: 'Dependes de fines de semana y temporada alta',
+    desc: 'Tu ocupación sube y baja drásticamente. Entre semana o en temporada baja, tu cabaña está vacía y pierdes dinero potencial.',
+  },
+  {
     icon: TrendingDown,
-    title: 'Ventas impredecibles mes a mes',
-    desc: 'Un mes bien, el siguiente mal. Sin un sistema de captación activo, tu negocio depende del azar, no de una estrategia.',
+    title: 'Tienes fechas vacías que podrías estar facturando',
+    desc: 'Hay semanas completas sin reservas. No tienes un sistema constante que te traiga clientes durante todo el año.',
   },
   {
-    icon: Clock,
-    title: 'El boca a boca ya no alcanza',
-    desc: 'Las referencias son valiosas, pero no son escalables. Necesitas un canal de adquisición que funcione mientras duermes.',
-  },
-  {
-    icon: Users,
-    title: 'Dinero invertido en publicidad sin retorno',
-    desc: 'Pagaste campañas en redes sociales y no viste resultados claros. El problema no es la plataforma, es la estrategia.',
+    icon: MessageCircle,
+    title: 'Te escriben, pero no concretan reservas',
+    desc: 'Recibes consultas, pero muchas se pierden o los interesados se van con la competencia. No tienes un follow-up efectivo.',
   },
   {
     icon: AlertTriangle,
-    title: 'Los leads llegan y se pierden',
-    desc: 'Sin un CRM ni automatización, los prospectos interesados se enfrían antes de que puedas contactarlos. Cada lead perdido es dinero que se va.',
+    title: 'No tienes un sistema constante de clientes',
+    desc: 'Dependes del boca a boca o de plataformas de terceros que cobran comisión. Necesitas tu propio canal de adquisición.',
   },
 ];
 
@@ -40,10 +40,10 @@ export default function ProblemSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-red-400 text-sm font-semibold uppercase tracking-wider">¿Te suena familiar?</span>
+          <span className="text-red-400 text-sm font-semibold uppercase tracking-wider">Me está pasando esto</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold mt-3 mb-4">
-            Tu negocio tiene potencial, pero{' '}
-            <span className="text-red-400">los clientes no llegan solos</span>
+            Si tienes una cabaña o alojamiento turístico,{' '}
+            <span className="text-red-400">probablemente te pasa esto:</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
             Estos son los problemas que resolvemos cada día para nuestros clientes. Si te identificas con alguno, estás en el lugar correcto.
@@ -64,7 +64,7 @@ export default function ProblemSection() {
                   <p.icon size={24} />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold mb-2">{p.title}</h3>
+                  <h3 className="text-lg font-bold mb-2">❌ {p.title}</h3>
                   <p className="text-gray-400 leading-relaxed">{p.desc}</p>
                 </div>
               </div>
@@ -80,14 +80,14 @@ export default function ProblemSection() {
         >
           <Image
             src="https://cdn.abacus.ai/images/a83dff90-151d-4111-9f28-d6ac930296b3.jpg"
-            alt="Empresario preocupado revisando resultados negativos de ventas antes de contratar a Traxion Digital"
+            alt="Dueño de cabaña preocupado por fechas vacías y falta de reservas - Traxion Digital"
             fill
             className="object-cover opacity-70"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/30 to-transparent" />
           <div className="absolute bottom-8 left-8 right-8">
             <p className="text-white text-xl sm:text-2xl font-bold max-w-xl">
-              "El 80% de los negocios que fracasan no tenían un sistema de captación de clientes."
+              "El 80% de las cabañas que no generan ingresos constantes no tienen un sistema de marketing activo."
             </p>
           </div>
         </motion.div>
