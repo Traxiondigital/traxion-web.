@@ -9,7 +9,7 @@ const solutions = [
   {
     icon: Zap,
     title: 'Campañas en Instagram y Facebook',
-    desc: 'Mostramos tu cabaña a personas que ya están buscando alojamiento. Ellos nos encuentran, no nosotros a ellos.',
+    desc: 'Mostramos tu hospedaje a personas que ya están buscando alojamiento. Ellos nos encuentran, no nosotros a ellos.',
   },
   {
     icon: Users,
@@ -46,7 +46,7 @@ export default function SolutionSection() {
               <span className="text-gradient">potenciales clientes todos los días</span>
             </h2>
             <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-              A través de campañas en redes sociales, mostramos tu cabaña a personas que ya están buscando dónde alojar, y las llevamos a un formulario donde dejan sus datos para reservar.
+              A través de campañas en redes sociales, mostramos tu hospedaje a personas que ya están buscando dónde alojar, y las llevamos a un formulario donde dejan sus datos para reservar.
             </p>
 
             <div className="space-y-4">
@@ -78,7 +78,7 @@ export default function SolutionSection() {
           >
             <Image
               src="https://cdn.abacus.ai/images/72ad64c5-1837-435a-97e8-570ec6b42538.png"
-              alt="Sistema de reservas de Traxion Digital mostrando crecimiento de ocupación en cabañas"
+              alt="Sistema de reservas de Traxion Digital mostrando crecimiento de ocupación en hospedajes"
               fill
               className="object-cover"
             />

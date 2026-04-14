@@ -9,7 +9,7 @@ const problems = [
   {
     icon: Calendar,
     title: 'Dependes de fines de semana y temporada alta',
-    desc: 'Tu ocupación sube y baja drásticamente. Entre semana o en temporada baja, tu cabaña está vacía y pierdes dinero potencial.',
+    desc: 'Tu ocupación sube y baja drásticamente. Entre semana o en temporada baja, tu hospedaje está vacía y pierdes dinero potencial.',
   },
   {
     icon: TrendingDown,
@@ -42,7 +42,7 @@ export default function ProblemSection() {
         >
           <span className="text-red-400 text-sm font-semibold uppercase tracking-wider">Me está pasando esto</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold mt-3 mb-4">
-            Si tienes una cabaña o alojamiento turístico,{' '}
+            Si tienes una hospedaje o alojamiento turístico,{' '}
             <span className="text-red-400">probablemente te pasa esto:</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
@@ -80,14 +80,14 @@ export default function ProblemSection() {
         >
           <Image
             src="https://cdn.abacus.ai/images/a83dff90-151d-4111-9f28-d6ac930296b3.jpg"
-            alt="Dueño de cabaña preocupado por fechas vacías y falta de reservas - Traxion Digital"
+            alt="Dueño de hospedaje preocupado por fechas vacías y falta de reservas - Traxion Digital"
             fill
             className="object-cover opacity-70"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/30 to-transparent" />
           <div className="absolute bottom-8 left-8 right-8">
             <p className="text-white text-xl sm:text-2xl font-bold max-w-xl">
-              "El 80% de las cabañas que no generan ingresos constantes no tienen un sistema de marketing activo."
+              "El 80% de las hospedajes que no generan ingresos constantes no tienen un sistema de marketing activo."
             </p>
           </div>
         </motion.div>

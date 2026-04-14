@@ -11,7 +11,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/traxion-marketing-agency-cover.png"
-          alt="Traxion Marketing Agency - Generamos reservas para cabañas y alojamientos"
+          alt="Traxion Marketing Agency - Generamos reservas para hospedajes y alojamientos"
           fill
           className="object-cover opacity-15"
           priority
@@ -31,7 +31,7 @@ export default function HeroSection() {
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight mb-8">
-            Llena tu cabaña con reservas todas las semanas sin depender solo de{' '}
+            Llena tu hospedaje con reservas todas las semanas sin depender solo de{' '}
             <span className="text-gradient">temporada alta</span>
           </h1>
 
