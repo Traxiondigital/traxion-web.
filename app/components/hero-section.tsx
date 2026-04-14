@@ -11,7 +11,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/traxion-marketing-agency-cover.png"
-          alt="Traxion Marketing Agency - Captamos clientes cualificados para tu negocio"
+          alt="Traxion Marketing Agency - Generamos reservas para cabañas y alojamientos"
           fill
           className="object-cover opacity-15"
           priority
@@ -27,17 +27,16 @@ export default function HeroSection() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-8">
             <Zap size={16} />
-            Agencia de Marketing Digital Especializada
+            Agencia de Marketing Digital para Alojamientos
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight mb-8">
-            No vendemos "likes", construimos{' '}
-            <span className="text-gradient">sistemas de ventas predecibles</span>
+            Llena tu cabaña con reservas todas las semanas sin depender solo de{' '}
+            <span className="text-gradient">temporada alta</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-3xl leading-relaxed mx-auto">
-            Atraemos clientes cualificados, los filtramos y los enviamos directamente a tu WhatsApp o CRM. 
-            <strong className="text-white block mt-3">Creatividad estratégica + Tecnología = Resultados medibles.</strong>
+            Generamos solicitudes de reserva de personas reales interesadas en alojarse en tu propiedad usando campañas en Instagram y Facebook.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -45,7 +44,7 @@ export default function HeroSection() {
               href="#formulario"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold text-lg rounded-xl transition-all hover:shadow-xl hover:shadow-blue-500/25 hover:scale-[1.02]"
             >
-              Llenar mi agenda
+              👉 Quiero más reservas
               <ArrowRight size={20} />
             </a>
             <a
@@ -59,15 +58,15 @@ export default function HeroSection() {
           <div className="flex flex-wrap gap-4 sm:gap-6 text-sm text-gray-400 justify-center">
             <div className="flex items-center gap-2 bg-dark-800/50 px-4 py-2 rounded-lg border border-white/5">
               <Target size={16} className="text-blue-400" />
-              Segmentación Estratégica
+              Audiencia Cualificada
             </div>
             <div className="flex items-center gap-2 bg-dark-800/50 px-4 py-2 rounded-lg border border-white/5">
               <TrendingUp size={16} className="text-green-400" />
-              Optimización Semanal
+              Reservas Reales
             </div>
             <div className="flex items-center gap-2 bg-dark-800/50 px-4 py-2 rounded-lg border border-white/5">
               <Zap size={16} className="text-yellow-400" />
-              Integración CRM
+              Instagram & Facebook
             </div>
           </div>
         </motion.div>
