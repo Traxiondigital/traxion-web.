@@ -8,26 +8,29 @@ const planFeatures = [
   {
     icon: Megaphone,
     title: 'Campañas en Meta Ads',
-items: [\'Estrategias avanzadas de segmentación\', \'Optimización continua para ROI máximo\'],
+    items: ['Estrategias avanzadas de segmentación', 'Optimización continua para ROI máximo'],
   },
   {
     icon: BarChart2,
     title: 'Gestión publicitaria',
-items: [\'Gestión proactiva de campañas\', \'Análisis de rendimiento y ajustes en tiempo real\'],
+    items: ['Gestión proactiva de campañas', 'Análisis de rendimiento y ajustes en tiempo real'],
   },
   {
     icon: Users,
     title: 'Generación de leads',
-  items: [\'Captura de leads cualificados con formularios optimizados\', \'Integración fluida con tu CRM para seguimiento inmediato\'], },
+    items: ['Captura de leads cualificados con formularios optimizados', 'Integración fluida con tu CRM para seguimiento inmediato'],
+  },
   {
     icon: Palette,
     title: 'Creatividad',
-    items: [\'Creativos de alto impacto diseñados para conversión\', \'Desarrollo de mensajes que resuenan con tu audiencia ideal\'], highlight: true,
+    items: ['Creativos de alto impacto diseñados para conversión', 'Desarrollo de mensajes que resuenan con tu audiencia ideal'],
+    highlight: true,
   },
   {
     icon: FileBarChart,
     title: 'Reporte semanal',
- items: [\'Reportes detallados de rendimiento y ROI\', \'Análisis de métricas clave y recomendaciones estratégicas\'],},
+    items: ['Reportes detallados de rendimiento y ROI', 'Análisis de métricas clave y recomendaciones estratégicas'],
+  },
 ];
 
 export default function PricingSection() {
