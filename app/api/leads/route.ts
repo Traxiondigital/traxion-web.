@@ -8,7 +8,25 @@ export async function POST(request: Request) {
     console.log('New lead received:', JSON.stringify(data, null, 2));
 
     try {
-      const htmlBody = `
+      // Determinar si es un lead del nuevo formulario progresivo o del antiguo
+      const isNewForm = data?.serviceType !== undefined;
+      
+      const htmlBody = isNewForm ? `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #111; color: #fff; padding: 24px; border-radius: 12px;">
+          <h2 style="color: #3b82f6; border-bottom: 2px solid #3b82f6; padding-bottom: 10px;">🔥 Nuevo Lead Calificado - Formulario de Alojamientos</h2>
+          <div style="background: #1a1a1a; padding: 20px; border-radius: 8px; margin: 16px 0;">
+            <p style="margin: 8px 0;"><strong style="color: #60a5fa;">Tipo de Servicio:</strong> ${data?.serviceType ?? 'N/A'}</p>
+            <p style="margin: 8px 0;"><strong style="color: #60a5fa;">Ubicación:</strong> ${data?.location ?? 'N/A'}</p>
+            <p style="margin: 8px 0;"><strong style="color: #60a5fa;">Unidades Disponibles:</strong> ${data?.units ?? 'N/A'}</p>
+            <p style="margin: 8px 0;"><strong style="color: #60a5fa;">Precio Promedio por Noche:</strong> $${data?.pricePerNight ?? 'N/A'}</p>
+            <p style="margin: 8px 0;"><strong style="color: #60a5fa;">Canales Actuales:</strong> ${Array.isArray(data?.clientSources) ? data.clientSources.join(', ') : 'N/A'}</p>
+            <p style="margin: 8px 0;"><strong style="color: #60a5fa;">Fechas Vacías:</strong> ${data?.hasEmptyDates ?? 'N/A'}</p>
+            <p style="margin: 8px 0;"><strong style="color: #60a5fa;">Presupuesto Mensual:</strong> ${data?.monthlyBudget ?? 'N/A'}</p>
+            <p style="margin: 8px 0;"><strong style="color: #60a5fa;">Interés en Estrategia:</strong> ${data?.interested ?? 'N/A'}</p>
+          </div>
+          <p style="color: #666; font-size: 12px;">Recibido: ${new Date().toLocaleString('es-CL', { timeZone: 'America/Santiago' })}</p>
+        </div>
+      ` : `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #111; color: #fff; padding: 24px; border-radius: 12px;">
           <h2 style="color: #3b82f6; border-bottom: 2px solid #3b82f6; padding-bottom: 10px;">Nuevo Lead - Formulario de Briefing</h2>
           <div style="background: #1a1a1a; padding: 20px; border-radius: 8px; margin: 16px 0;">
