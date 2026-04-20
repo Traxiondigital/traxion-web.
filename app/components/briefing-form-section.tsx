@@ -16,12 +16,12 @@ export default function BriefingFormSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <span className="text-blue-400 text-sm font-semibold uppercase tracking-wider">Descubre tu potencial</span>
+          <span className="text-blue-400 text-sm font-semibold uppercase tracking-wider">Diagnóstico Express</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold mt-3 mb-4">
-            Descubre cómo llenar tus alojamientos con <span className="text-gradient">clientes listos para reservar</span>
+            Diagnóstico Express: Descubre por qué tu alojamiento <span className="text-gradient">no se llena</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-            Responde estas preguntas y evalúa si podemos ayudarte a aumentar tu ocupación de forma constante.
+            En solo 60 segundos, identifica los puntos ciegos en tu estrategia de captación de reservas y recibe un análisis preliminar gratuito.
           </p>
         </motion.div>
 

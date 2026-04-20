@@ -8,37 +8,30 @@ const steps = [
   {
     num: '01',
     icon: Search,
-    title: 'Diagnóstico Express',
-    desc: 'Entendemos tu negocio, revisamos tus activos digitales y detectamos oportunidades inmediatas.',
+    title: 'Diagnóstico Gratuito',
+    desc: 'Analizamos tu situación actual y detectamos oportunidades de crecimiento para tu alojamiento.',
     color: 'blue',
   },
   {
     num: '02',
     icon: PenTool,
-    title: 'Estrategia Personalizada',
-    desc: 'Diseñamos un embudo de ventas a medida: anuncio → formulario → CRM → cierre por WhatsApp.',
+    title: 'Diseño de Estrategia',
+    desc: 'Creamos un plan a medida para tu alojamiento, enfocado en atraer y convertir huéspedes.',
     color: 'purple',
   },
   {
     num: '03',
     icon: Rocket,
-    title: 'Campaña Piloto 14 Días',
-    desc: 'Lanzamos tu primera campaña sin costo de honorarios. Solo pagas la publicidad.',
+    title: 'Implementación y Lanzamiento',
+    desc: 'Ponemos en marcha las campañas y el sistema de captación de reservas.',
     color: 'cyan',
   },
   {
     num: '04',
-    icon: BarChart2,
-    title: 'Seguimiento y Optimización',
-    desc: 'Reuniones semanales para analizar métricas y optimizar el rendimiento de la campaña.',
-    color: 'green',
-  },
-  {
-    num: '05',
     icon: TrendingUp,
-    title: 'Escalamiento',
-    desc: 'Testeamos audiencias, creativos y mensajes para escalar los resultados de forma sostenida.',
-    color: 'orange',
+    title: 'Optimización Continua',
+    desc: 'Ajustamos y escalamos para asegurar un flujo constante de huéspedes y maximizar tu ocupación.',
+    color: 'green',
   },
 ];
 
@@ -70,12 +63,12 @@ export default function MethodologySection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-blue-400 text-sm font-semibold uppercase tracking-wider">Metodología</span>
+          <span className="text-blue-400 text-sm font-semibold uppercase tracking-wider">Cómo Funciona</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold mt-3 mb-4">
-            5 pasos para llenar tu <span className="text-gradient">agenda de clientes</span>
+            Nuestro <span className="text-gradient">sistema de reservas</span> en 4 pasos
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-            Un proceso probado que genera resultados medibles desde la primera semana.
+            Un proceso claro y eficiente diseñado para maximizar la ocupación de tu alojamiento.
           </p>
         </motion.div>
 

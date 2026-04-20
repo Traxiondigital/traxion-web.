@@ -42,11 +42,10 @@ export default function TestimonialsSection() {
         >
           <span className="text-blue-400 text-sm font-semibold uppercase tracking-wider">Resultados reales</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold mt-3 mb-4">
-            Lo que dicen quienes ya{' '}
-            <span className="text-gradient">llenan su agenda</span>
+            Resultados que hablan por sí solos: <span className="text-gradient">Historias de éxito</span> en el sector turístico
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-            Negocios chilenos que dejaron de depender del boca a boca y hoy tienen un sistema de captación que trabaja por ellos.
+            Sabemos que la credibilidad es clave. Aunque estamos expandiendo activamente nuestro portafolio en el sector turístico, ya contamos con casos de éxito que demuestran la efectividad de nuestro sistema.
           </p>
         </motion.div>
 
